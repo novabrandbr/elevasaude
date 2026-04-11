@@ -1,14 +1,8 @@
 import Particles from "@/components/Particles";
 import HeroBadge from "@/components/HeroBadge";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import ProductCard from "@/components/ProductCard";
-
-const products = [
-  { name: "Tirzepatida", dose: "2.5mg", price: "R$ 149" },
-  { name: "Tirzepatida", dose: "5mg", price: "R$ 249", highlight: true },
-  { name: "Tirzepatida", dose: "7.5mg", price: "R$ 349" },
-  { name: "Tirzepatida", dose: "10mg", price: "R$ 449" },
-];
+import productsBanner from "@/assets/products-banner.png";
+import logoEleva from "@/assets/logo-eleva.png";
 
 const Index = () => (
   <div className="relative min-h-screen overflow-hidden">
@@ -34,6 +28,9 @@ const Index = () => (
 
     {/* Content */}
     <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 py-16">
+      {/* Logo */}
+      <img src={logoEleva} alt="Eleva Saúde" className="mb-8 h-24 w-auto object-contain" />
+
       {/* Badge */}
       <HeroBadge />
 
@@ -49,11 +46,15 @@ const Index = () => (
         Entre no grupo agora e receba ofertas exclusivas todos os dias
       </p>
 
-      {/* Products */}
-      <div className="mt-12 grid w-full max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4">
-        {products.map((p) => (
-          <ProductCard key={p.dose} {...p} />
-        ))}
+      {/* Products Banner */}
+      <div className="mt-12 w-full max-w-2xl">
+        <div className="box-glow-blue overflow-hidden rounded-2xl border border-border">
+          <img
+            src={productsBanner}
+            alt="Produtos Tirzepatida"
+            className="h-auto w-full object-cover"
+          />
+        </div>
       </div>
 
       {/* CTA */}
