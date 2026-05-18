@@ -1,6 +1,6 @@
 const WhatsAppButton = () => (
   <a
-    href="https://chat.whatsapp.com/CS4V2NGXNuh3E94jXv3CZe"
+    href="https://chat.whatsapp.com/HAThVDLqWdkGwmHfhcoahT"
     target="_blank"
     rel="noopener noreferrer"
     className="btn-whatsapp inline-flex items-center gap-2 rounded-full px-8 py-3.5 text-base font-bold tracking-wide transition-all duration-300 hover:scale-105 active:scale-95 sm:px-10 sm:py-4 sm:text-lg"
