@@ -1,8 +1,13 @@
+import { trackLead } from "@/lib/fbq";
+
 const WhatsAppButton = () => (
   <a
     href="https://chat.whatsapp.com/JrHtZZKsDQb25opSy6GOjj"
     target="_blank"
     rel="noopener noreferrer"
+    onClick={() => {
+      trackLead();
+    }}
     className="btn-whatsapp inline-flex items-center gap-2 rounded-full px-8 py-3.5 text-base font-bold tracking-wide transition-all duration-300 hover:scale-105 active:scale-95 sm:px-10 sm:py-4 sm:text-lg"
   >
     <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
