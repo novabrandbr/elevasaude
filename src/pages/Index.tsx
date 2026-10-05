@@ -1,6 +1,5 @@
 import Particles from "@/components/Particles";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import productsBanner from "@/assets/products-banner.png";
 import logoEleva from "@/assets/logo-eleva.png";
 
 const Index = () => (
@@ -39,27 +38,16 @@ const Index = () => (
         </div>
 
         {/* Headline */}
-        <h1 className="text-glow-white text-center text-2xl font-extrabold leading-none tracking-tight text-foreground sm:text-4xl md:text-5xl">
-          OS MELHORES PREÇOS
+        <h1 className="text-glow-white text-center text-3xl font-extrabold leading-none tracking-tight text-foreground sm:text-4xl md:text-5xl">
+          Entre no grupo de
           <br />
-          <span className="text-glow text-primary">DO BRASIL</span>
+          <span className="text-glow text-primary">promoções</span>
         </h1>
 
         {/* Subtitle */}
         <p className="max-w-sm text-center text-xs text-muted-foreground sm:text-sm">
           Entre no grupo e receba ofertas exclusivas todos os dias
         </p>
-
-        {/* Products Banner */}
-        <div className="w-full max-w-md px-2">
-          <div className="box-glow-blue overflow-hidden rounded-xl border border-border">
-            <img
-              src={productsBanner}
-              alt="Produtos Tirzepatida"
-              className="h-auto w-full object-cover"
-            />
-          </div>
-        </div>
       </div>
 
       {/* Bottom: CTA */}
