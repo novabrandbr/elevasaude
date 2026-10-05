@@ -48,11 +48,13 @@ const Index = () => (
         <p className="max-w-sm text-center text-xs text-muted-foreground sm:text-sm">
           Entre no grupo e receba ofertas exclusivas todos os dias
         </p>
+
+        {/* CTA */}
+        <WhatsAppButton />
       </div>
 
-      {/* Bottom: CTA */}
+      {/* Bottom: Escassez + rodapé */}
       <div className="flex shrink-0 flex-col items-center gap-2 pb-2">
-        <WhatsAppButton />
         <p className="flex items-center gap-1.5 text-xs font-medium text-primary">
           ⚡ Vagas limitadas no grupo
         </p>
